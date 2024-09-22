@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Sabor 2024</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Cadastro - Sabor 2024</h2>
+    <form action="../php/processa_cadastro.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <label for="residencia">Residência:</label>
+        <input type="text" id="residencia" name="residencia" required>
+
+        <label for="preferencias">Preferências de Alimentação:</label>
+        <input type="text" id="preferencias" name="preferencias" required>
+
+        <div class="buttons">
+            <button type="submit" class="btn btn-save">Salvar</button>
+            <button type="reset" class="btn btn-clear">Limpar</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+<footer>
+    <p>&copy; 2024 Saborela - Todos os direitos reservados</p>
+</footer>
